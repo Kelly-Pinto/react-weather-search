@@ -1,0 +1,58 @@
+.weather-app-wrapper {
+  max-width: 700px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solid #d6d2d7;
+  border-radius: 5px;
+}
+
+.weather-app {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7e7c7e;
+}
+
+.City h1 {
+  margin-bottom: 0;
+}
+
+.update p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-top: 18px;
+}
+
+.currentTempWrapper {
+  margin-top: 10px;
+}
+
+.currentConditionImage {
+  min-height: 80px;
+  position: relative;
+  top: -10px;
+}
+
+.currentTemp {
+  color: #1e1d1e;
+  font-size: 45px;
+  font-weight: 100;
+  display: inline;
+}
+
+.units {
+  position: relative;
+  top: -20px;
+}
+
+#conditions {
+  list-style: none;
+  line-height: 1;
+}
+
+#units .active {
+  color: #7e7c7e;
+  cursor: default;
+}
