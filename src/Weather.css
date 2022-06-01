@@ -25,6 +25,10 @@ ul {
   padding-top: 18px;
 }
 
+li {
+  padding: 5px 0 0 0;
+}
+
 .currentTempWrapper {
   margin-top: 10px;
 }
@@ -47,12 +51,20 @@ ul {
   top: -20px;
 }
 
-#conditions {
+.conditions {
   list-style: none;
   line-height: 1;
 }
 
-#units .active {
+.units .active {
   color: #7e7c7e;
   cursor: default;
+}
+
+.Github a {
+  text-decoration: none;
+}
+
+.Github {
+  padding-left: 20px;
 }
