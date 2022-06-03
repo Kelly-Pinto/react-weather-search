@@ -16,16 +16,22 @@
   margin-bottom: 0;
 }
 
-.update p {
-  margin-top: 0;
-  margin-bottom: 0;
+.update ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-ul {
+.update li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.conditions ul {
   padding-top: 18px;
 }
 
-li {
+.description li {
   padding: 5px 0 0 0;
 }
 
