@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
-import FormattedDate from "./FormattedDate";
+import CurrentWeather from "./CurrentWeather";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -42,59 +42,7 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-          <div className="City">
-            <h1>New York</h1>
-          </div>
-          <div className="update">
-            <ul>
-              <li>
-                <FormattedDate date={weatherData.date} />
-              </li>
-              <li className="text-capitalize">{weatherData.description}</li>
-            </ul>
-          </div>
-
-          <div className="Current">
-            <div className="container">
-              <div className="row">
-                <div className="col-6">
-                  <div className="currentTempWrapper">
-                    <img
-                      src={weatherData.iconUrl}
-                      alt={weatherData.description}
-                      className="currentConditionImage"
-                      id="icon"
-                    />
-                    <p className="currentTemp">
-                      {Math.round(weatherData.temperature)}
-                    </p>
-
-                    <span className="units">°F</span>
-                  </div>
-                </div>
-
-                <div className="col-6">
-                  <ul className="conditions">
-                    <li className="description"></li>
-                    <li>
-                      Humidity: <span>{weatherData.humidity}</span>%
-                    </li>
-                    <li>
-                      Wind: <span>{Math.round(weatherData.wind)}</span>mph
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="Github">
-          <small>
-            <a href="https://github.com/Kelly-Pinto/weather-react">
-              Open-source code
-            </a>{" "}
-            by Kelly Pinto
-          </small>
+          <CurrentWeather data={weatherData} />
         </div>
       </div>
     );
