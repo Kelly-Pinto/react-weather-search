@@ -11,7 +11,7 @@ export default function Weather(props) {
       ready: true,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -23,6 +23,7 @@ export default function Weather(props) {
     const apiKey = "42d967004f943c4e9a88d5763e34cc28";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
+    console.log(apiUrl);
   }
 
   function handleSubmit(event) {

@@ -26,7 +26,6 @@ export default function CurrentWeather(props) {
                   src={props.data.iconUrl}
                   alt={props.data.description}
                   className="currentConditionImage"
-                  id="icon"
                 />
                 <p className="currentTemp">
                   {Math.round(props.data.temperature)}
