@@ -5,7 +5,7 @@ export default function CurrentWeather(props) {
   return (
     <div className="currentWeather">
       <div className="City">
-        <h1>New York</h1>
+        <h1>{props.data.city}</h1>
       </div>
 
       <div className="update">
