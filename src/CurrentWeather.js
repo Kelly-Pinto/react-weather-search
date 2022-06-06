@@ -49,7 +49,7 @@ export default function CurrentWeather(props) {
 
       <div className="Github">
         <small>
-          <a href="https://github.com/Kelly-Pinto/weather-react">
+          <a href="https://github.com/Kelly-Pinto/react-weather-search">
             Open-source code
           </a>{" "}
           by Kelly Pinto
