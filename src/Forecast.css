@@ -1,0 +1,30 @@
+.forecastDay {
+  padding-top: 15px;
+  color: black;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+.weatherForecastTemperatures {
+  font-size: 14px;
+  text-align: center;
+}
+
+.forecastTempMax {
+  opacity: 0.9;
+}
+.forecastTempMin {
+  opacity: 0.6;
+}
+
+.forecastIcon {
+  display: block;
+  margin: 0 auto;
+  max-width: 70px;
+}
+
+.forecastDay {
+  text-align: center;
+  font-weight: 500;
+}

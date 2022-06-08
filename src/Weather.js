@@ -62,6 +62,14 @@ export default function Weather(props) {
           </form>
           <CurrentWeather data={weatherData} />
         </div>
+        <div className="Github">
+          <small>
+            <a href="https://github.com/Kelly-Pinto/react-weather-search">
+              Open-source code
+            </a>{" "}
+            by Kelly Pinto
+          </small>
+        </div>
       </div>
     );
   } else {
