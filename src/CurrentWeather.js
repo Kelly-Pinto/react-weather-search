@@ -48,7 +48,7 @@ export default function CurrentWeather(props) {
             </div>
           </div>
         </div>
-        <Forecast icon={props.data.iconUrl} />
+        <Forecast icon={props.data.iconUrl} coords={props.data.coords} />
       </div>
     </div>
   );
