@@ -17,7 +17,6 @@ export default function Forecast(props) {
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="row">
         <ForecastDay forecastData={forecast[0]} />
