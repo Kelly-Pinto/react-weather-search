@@ -64,7 +64,11 @@ export default function Weather(props) {
         </div>
         <div className="Github">
           <small>
-            <a href="https://github.com/Kelly-Pinto/react-weather-search">
+            <a
+              href="https://github.com/Kelly-Pinto/react-weather-search"
+              target="_blank"
+              rel="noreferrer"
+            >
               Open-source code
             </a>{" "}
             by Kelly Pinto
